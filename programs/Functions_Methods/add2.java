@@ -6,6 +6,7 @@ public class add2 {
         int su = sum(2, 10);
         // Print the result to the console
         System.out.println(su);
+        System.out.println(su);
     }
 
     // Define a static method named sum that calculates the sum of two integers
@@ -16,4 +17,3 @@ public class add2 {
         return summ;
     }
 }
-

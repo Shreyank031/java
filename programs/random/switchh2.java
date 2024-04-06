@@ -1,3 +1,5 @@
+package random;
+
 import java.util.Scanner;
 
 // Define the main class
