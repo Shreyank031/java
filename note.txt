@@ -1,0 +1,20 @@
+ArrayList<Integers> list -> cannot add primitives.
+	  	    	 -> wraper classes should be used -> Generics
+			 -> Constructor
+
+ArrayList<Integers> list = new ArrayList<>(10);
+ 
+ list.add(<number>)
+ list.set(<index>, <number>)
+ list.remove(<index>)
+ list.contains(<number>)
+ ------------------------------------------------------------------------------------
+ linear_search.java
+ String str = "Hello";
+ in loop we can use CharAt(i) to get a character at a particular index
+in loop -> str.CharAt(i); 
+str.CharAt(o) = 4
+-----
+linear2.java
+str.toCharArray() -> convert a string to character array
+
