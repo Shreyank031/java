@@ -1,4 +1,3 @@
-// Import the Scanner class
 import java.util.Scanner;
 
 // Define a public class named array1
@@ -11,7 +10,7 @@ public class array1 {
 
         // Declare an array of integers named ar with a length of 5
         int ar[] = new int[5];
-		System.out.print("Enter 5 integers : ");
+        System.out.print("Enter 5 integers : ");
 
         // Prompt the user to enter 5 integer values and store them in the array
         for (int i = 0; i < ar.length; i++) {
