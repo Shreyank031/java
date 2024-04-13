@@ -1,29 +1,23 @@
 import java.util.*;
 
-public class ceiling_no {
+public class floor {
 	public static void main(String[] args) {
 		int[] array = { -2, 0, 3, 5, 7, 12, 18, 22, 23, 31, 49 };
-		// int[] array = { 23, 19, 13, 12, 7, 5, 3, 2, 1, 0, -3 };
-
-		System.out.println("Enter the number: ");
+		// int target = -3;
+		System.out.print("Enter the number: ");
 		Scanner input = new Scanner(System.in);
-		int in = input.nextInt();
+		int target = input.nextInt();
 		input.close();
 
-		int index = binarySearch(array, in);
+		int index = floorSearch(array, target);
 
 		System.out.println(index);
 	}
 
-	static int binarySearch(int[] arr, int target) {
+	static int floorSearch(int[] arr, int target) {
+
 		int start = 0;
-		int end = arr.length;
-
-		if (target > arr.length - 1) {
-			return -1;
-
-		}
-
+		int end = arr.length - 1;
 		while (start <= end) {
 			int mid = start + (end - start) / 2;
 
@@ -35,6 +29,6 @@ public class ceiling_no {
 				return arr[mid];
 			}
 		}
-		return arr[start];
+		return arr[end];
 	}
 }
