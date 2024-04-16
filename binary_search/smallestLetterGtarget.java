@@ -3,7 +3,8 @@ import java.util.*;
 public class smallestLetterGtarget {
 	public static void main(String[] args) {
 		char[] array = { 'a', 'b', 'k', 'm', 'p', 's', 'u' };
-		char target = 'k';
+		char target = 'u';
+		System.out.println(array.length);
 		System.out.println(smallestLetter(array, target));
 		// smallest number greater than target and letters wrap around
 	}
