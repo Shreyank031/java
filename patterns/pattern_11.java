@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class pattern_10 {
+public class pattern_11 {
 	public static void main(String[] args) {
 		System.out.print("Enter the number: ");
 		Scanner input = new Scanner(System.in);
@@ -11,15 +11,17 @@ public class pattern_10 {
 
 	static void pattern(int num) {
 		for (int i = 0; i < num; i++) {
-			int start = i;
-			if (i > (num / 2)) {
-				start = num - i - 1;
+			int start;
+			if (i % 2 == 0) {
+				start = 1;
+			} else {
+				start = 0;
 			}
-			for (int j = 0; j < start + 1; j++) {
-				System.out.print("*");
+			for (int j = 0; j < i + 1; j++) {
+				System.out.print(start);
+				start = 1 - start;
 			}
 			System.out.println();
 		}
 	}
-
 }
