@@ -30,14 +30,14 @@ public class sort1 {
 	}
 
 	// Method to sort the array using selection sort algorithm
-	static void insert(int size, int[] arr) {
+	static void insert(int n, int[] arr) {
 		// Iterate through the array
-		for (int i = 0; i <= size - 2; i++) {
+		for (int i = 0; i <= n - 2; i++) {
 			// Initialize the index of the minimum element to the current index
 			int mini = i;
 
 			// Iterate through the unsorted portion of the array
-			for (int j = i; j <= size - 1; j++) {
+			for (int j = i + 1; j <= n - 1; j++) {
 				// If the current element is smaller than the current minimum,
 				// update the index of the minimum element
 				if (arr[mini] > arr[j]) {
